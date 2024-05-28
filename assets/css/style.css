@@ -1,0 +1,163 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter-VariableFont_slnt,wght';
+}
+@font-face {
+    font-family: 'Inter-VariableFont_slnt,wght';
+    src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+body{
+    background-color: #141414;
+}
+
+.container{
+max-width: 100%;
+padding: 0 9%;
+}
+
+.sec_padding{
+    padding: 3vw 0;
+}
+
+.card-wrapper {
+    background: #1f1f1f;
+    padding: 4vw;
+    border-radius: 8px;
+    width: 31.7708333333vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.profile-wrapper figure {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 100px;
+    margin: 0 auto;
+    margin-bottom: 2vw;
+}
+
+.profile-wrapper figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1.name {
+    color: #fff;
+    font-size: 1.7vw;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.profile-wrapper p {
+    font-size: 1.2vw;
+    font-weight: 500;
+    color: #9ed708;
+}
+
+.btn-wrapper{
+    margin-top: 20px;
+}
+
+.btn-wrapper p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    color: #fff;
+}
+
+.btn-wrapper button{
+    position: relative;
+    display: block;
+    width: 100%;
+    background: #333333;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2vw;
+    color: #fff;
+    padding: 12px 20px;
+    margin-bottom: 12px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn-wrapper button::before{
+    position: absolute;
+    content: '';
+    top: 0px;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    background-color: #9ed708;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+
+.btn-wrapper button:hover::before{
+ width: 100%;
+ height: 100%;
+ opacity: 1;
+}
+
+.attribution {
+    text-align: center;
+    padding: 10px;
+    background: #333333;
+    color: #fff;
+}
+a {
+    color: #9ed708;
+}
+ 
+ @media (max-width:1240px) {
+    .card-wrapper {
+        width: 40.7708333333vw;
+    }
+ }
+ @media (max-width:768px) {
+    .card-wrapper {
+        width:70%;
+    }
+    .btn-wrapper button {
+        font-size: 2.2vw;
+    }
+    h1.name {
+        font-size: 2.7vw;
+    }
+    .profile-wrapper p {
+        font-size: 1.7vw;
+    }
+ }
+ @media (max-width:525px) {
+    .card-wrapper {
+        width:100%;
+    }
+    h1.name {
+        font-size: 4.7vw;
+    }
+    .profile-wrapper p {
+        font-size: 2.7vw;
+    }
+    .btn-wrapper p {
+        margin-top: 34px;
+    }
+    .btn-wrapper button {
+        font-size: 3.2vw;
+    }
+ }
+ @media (max-width:480px) {
+    .profile-wrapper figure {
+        width: 100px;
+        height: 100px;
+    }
+ }
